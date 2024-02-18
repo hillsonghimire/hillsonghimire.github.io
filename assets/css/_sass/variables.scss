@@ -1,18 +1,20 @@
-$base-font-family: 'Work Sans', sans-serif;
-$base-font-size:   20px;
-$base-font-weight: 400;
-$small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.7;
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-$spacing-unit:     30px;
+$base-font-family: 'Work Sans', sans-serif;
+$base-font-size: 15px;
+$base-font-weight: 400;
+$small-font-size: $base-font-size * 0.875;
+$base-line-height: 1.5;
+
+$spacing-unit: 30px;
 $light-gray: gray;
-$text-color:       #333;
+$text-color: #333;
 $background-color: #fdfdfd;
-$brand-color:      #60c17d;
-$projectbox-text:  #1e2126;
+$brand-color: #8F5B34;
+$projectbox-text: #1e2126;
 
 // Color scheme for light
-$body-bg: #fdfdfd;
+$body-bg: #f6f8fa;
 $projectbox: #c3e1c9;
 $text-color: #333;
 

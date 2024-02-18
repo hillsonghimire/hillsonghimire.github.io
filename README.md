@@ -1,28 +1,25 @@
-# Gradfolio
+<div align="center">
+<br>
 
-responsive, dark-mode ready Jekyll theme designed for use as a personal website and portfolio. [Here's a live demo](https://jitinnair1.github.io/gradfolio/)
+Hi 🙏, This is my personal website, a modified version of [gradfolio](https://github.com/jitinnair1/gradfolio), powered by Jekyll, hosted on github pages.
 
-## Features
-- Responsive
-- Respects Dark Mode preference set by the user
-- Projects Page to showcase your work/side projects
-- Easily link to your profiles on ResearchGate and ORCID
+<div align="left">
 
-## Installation
-* Click on `Use this template`
-* Your new site should be ready at https://username.github.io/gradfolio/
-* You can now modify the contents and personalise the template
+### Build descriptions (because i always forget the exact steps)
 
-Alternatively, you can [download the source files](https://github.com/jitinnair1/gradfolio/archive/master.zip) and [make changes locally](https://github.com/jitinnair1/gradfolio/wiki/Local-Development). 
+#### Details
 
-## Documentation
-
-Check out the [Wiki](https://github.com/jitinnair1/gradfolio/wiki) for some tips on [publishing to a custom domain](https://github.com/jitinnair1/gradfolio/wiki/Publishing-your-website) or an [indicative list of things to customise before you publish](https://github.com/jitinnair1/gradfolio/wiki/Customising-your-website) 
-
-### Also, check out:
-
-- [autoCV](https://github.com/jitinnair1/autocv) - a LaTeX template that builds and deploys the CV using GitHub Actions, so you will always have a ready link for your latest CV
-- [Tail](https://github.com/jitinnair1/tail) - a minimal, quick-setup template for a blog
+1. The homepage contents are in: `./index.md`
+2. All site configurations are available in: `_config.ml`
+3. Add navigation items from: `_includes/navigation.html`
+4. Add the same item to: `_pages/<name.md>`
+    This will automatically create folder in `_site/<name>` with named as `<name>`.
+    Ensure that this `<name>` is the same that you added in `step:1`
+5. Basic `styling` can be modified through: `assets/css/_scss/variables.scss`
+6. To modify the overall layouting of homepage or other pages: `_layouts/default.html`
 
 
-PS: If you liked the theme, do star :star: it! Thanks!
+#### Build Guide
+
+1. Install [jekyll](https://jekyllrb.com/docs/installation/) and [nodejs](https://nodejs.org/en)
+2. Build using: `bundle exec jekyll serve`
