@@ -8,27 +8,29 @@ $on-palm: 480px;
   margin: 0 auto;
   padding: 2rem;
 }
+
 /* Modify the gallery for larger screens (default) */
 .gallery {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* Two columns by default */
+  grid-template-columns: 1fr 1fr;
+  /* Two columns by default */
   grid-gap: 2rem;
   margin: 0;
 }
 
 .projectTile {
-  border-radius: 15px;
+  border-radius: 5px;
   overflow: hidden;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s;
   background: $projectbox;
-  
+
   @media (prefers-color-scheme: dark) {
     background: $projectbox-dark;
   }
-  
+
   &:hover {
-    transform: translateY(-10px);
+    transform: translateY(-5px);
   }
 }
 
@@ -39,7 +41,7 @@ $on-palm: 480px;
 }
 
 .projectImage {
-  height: 200px;
+  height: 250px;
   background-size: cover;
   background-position: center;
 }
@@ -48,61 +50,74 @@ $on-palm: 480px;
   padding: 15px;
   color: $light-gray;
   background-color: #f9f9f9; // Adjust this if you have a variable for this color
-  
+
   h2 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
+    font-size: 1rem;
+    margin-bottom: 0px;
     color: $projectbox-text;
   }
-  
+
   p {
-    font-size: 1rem;
+    font-family: 'Barlow Condensed';
+    font-size: 0.8rem;
   }
 }
 
 /* Media query for phone-sized screens */
 @media screen and (max-width: $on-phone) {
   .gallery {
-    grid-template-columns: 1fr; /* Single column for smaller screens */
+    grid-template-columns: 1fr;
+    /* Single column for smaller screens */
   }
 
   .projectImage {
-    height: auto; /* Adjust height for phone-sized screens */
-    padding-top: 56.25%; /* 16:9 aspect ratio, adjust as needed */
+    height: auto;
+    /* Adjust height for phone-sized screens */
+    padding-top: 56.25%;
+    /* 16:9 aspect ratio, adjust as needed */
     background-size: cover;
     background-position: center;
   }
 
   .projectInfo h2 {
-    font-size: 1.2rem; /* Adjust font size for phone-sized screens */
+    font-size: 1.2rem;
+    /* Adjust font size for phone-sized screens */
   }
 }
 
 /* Media query for even smaller screens (like palms) */
 @media screen and (max-width: $on-palm) {
   .projectImage {
-    height: auto; /* Adjust height for phone-sized screens */
-    padding-top: 56.25%; /* 16:9 aspect ratio, adjust as needed */
+    height: auto;
+    /* Adjust height for phone-sized screens */
+    padding-top: 56.25%;
+    /* 16:9 aspect ratio, adjust as needed */
     background-size: cover;
     background-position: center;
   }
 
   .projectInfo h2 {
-    font-size: 1.3rem; /* Adjust font size for palm-sized screens */
+    font-size: 1.3rem;
+    /* Adjust font size for palm-sized screens */
   }
 }
 
 
 .projectTileLink {
-  text-decoration: none; /* Remove the default underline from the anchor tag */
-  color: inherit; /* Ensure text color remains consistent when hovering */
-  display: block; /* Make sure it behaves as a block for layout purposes */
+  text-decoration: none;
+  /* Remove the default underline from the anchor tag */
+  color: inherit;
+  /* Ensure text color remains consistent when hovering */
+  display: block;
+  /* Make sure it behaves as a block for layout purposes */
 }
 
 .projectImage {
-  transition: transform 0.3s ease; /* This ensures the animation is smooth */
+  transition: transform 0.3s ease;
+  /* This ensures the animation is smooth */
 }
 
 .projectTileLink:hover .projectImage {
-  transform: scale(1.05); /* The image will enlarge to 105% of its size on hover */
+  transform: scale(1.05);
+  /* The image will enlarge to 105% of its size on hover */
 }

@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: post
 title: Project 4
 description: another project
@@ -139,4 +139,4 @@ and images can be specified like so:
 Inline math equation: $\omega = d\phi / dt$. Display
 math should get its own line like so:
 
-$$I = \int \rho R^{2} dV$$
+$$I = \int \rho R^{2} dV$$ -->

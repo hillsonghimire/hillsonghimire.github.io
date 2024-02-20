@@ -1,0 +1,77 @@
+---
+# layout: compress
+---
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1" name="viewport">
+        <link rel="stylesheet" href="{{site.baseurl}}/assets/css/main.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+        <h1 class="post-headline">{{site.title}}</h1>
+        <h3 class="post-description">{{site.description}}</h3>
+
+        {% include navigation.html %}
+
+        {% seo %}
+
+        {% include favicon.html %}
+
+        {% include mathjax.html %}
+
+        <!-- Load fontawesome here for faster loadtimes: https://stackoverflow.com/a/35880730/9523246 -->
+        <script type="text/javascript"> (function() { var css = document.createElement('link'); css.href = 'https://use.fontawesome.com/releases/v5.11.0/css/all.css'; css.rel = 'stylesheet'; css.type = 'text/css'; document.getElementsByTagName('head')[0].appendChild(css); })(); </script>
+    </head>
+
+    <body>
+        <main>
+            <article>
+                {{ content }}
+                <div style="display: flex;  width:100%; overflow:auto;">
+                    <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7118088194818002944" style="height: 1060px; width: 100%; max-width: 600px; border: 0.1px solid rgb(223, 220, 220); border-radius: 10px; margin-top:10px"   allowfullscreen="true"> </iframe> 
+                    <blockquote class="twitter-tweet" cards="hidden"><p lang="en" dir="ltr">
+                        <a href="https://twitter.com/hashtag/Interferogram?src=hash&amp;ref_src=twsrc%5Etfw">#Interferogram</a> using jaxa&#39;s 
+                        <a href="https://twitter.com/hashtag/ALOS2?src=hash&amp;ref_src=twsrc%5Etfw">#ALOS2</a> level1.1 data on descending track acquired before [2022-06-10] and after [2023-10-13] the series of 
+                        <a href="https://twitter.com/hashtag/earthquake?src=hash&amp;ref_src=twsrc%5Etfw">#earthquake</a>; shows ground deformation observed in 
+                        <a href="https://twitter.com/hashtag/Herat?src=hash&amp;ref_src=twsrc%5Etfw">#Herat</a> province, Afghanistan.<br>Read more: 
+                        <a href="https://t.co/x8fC51OxcY">https://t.co/x8fC51OxcY</a> <a href="https://twitter.com/hashtag/INSAR?src=hash&amp;ref_src=twsrc%5Etfw">#INSAR</a> 1/ 
+                        <a href="https://t.co/wJOekcOqGY">https://t.co/wJOekcOqGY</a> <a href="https://t.co/VB8aLWSAzp">pic.twitter.com/VB8aLWSAzp</a></p>&mdash; hillson ghimire (@hillsonghimire) 
+                        <a href="https://twitter.com/hillsonghimire/status/1713566874108354650?ref_src=twsrc%5Etfw">October 15, 2023</a>
+                    </blockquote> 
+                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
+                <br>
+                <div>
+                    <h3>Exploratory drilling in the northern border of Namibia & Botswana seen in PlanetLabs imagery</h3>
+                    <iframe frameborder="0" class="juxtapose" width="100%" height="570" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=042bcb74-5c01-11eb-83c8-ebb5d6f907df"></iframe>
+                </div>
+                <div style="display: flex;  width:100%; overflow:auto;">
+                    <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FSkyTruth%2Fposts%2Fpfbid0eHfmETKaJB85F62qGf5ndkwBvMPRU61MHQoC4VKLwqVNkBRBniCsB8veybcRRPCKl&show_text=true&width=400" width="100%" height="622" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                    <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FSkyTruth%2Fposts%2Fpfbid05GEUDs2Pcz8YhmVcYZe7wm6LwY8c4gMS2mmXwUwTWdovdpDL2PWNW2CR3Q84EA8ql&show_text=true&width=400" width="100%" height="622" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>                    
+                </div>
+                <h3>Oil Slick Monitoring</h3>
+                <div style="display: flex;  width:100%; overflow:auto;">
+                    <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FSkyTruth%2Fposts%2Fpfbid021GbbpnLF7pX8WCbGLoCBiS4Lf6RRZoj4jm4Sx1U4h3dKDTVEx6mUjZEosebExW6yl&width=400&show_text=false&height=963&appId" width="750" height="963" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                </div>
+            </article>
+        </main>
+
+        <footer>
+          <p class="copy">
+            <small> &copy; {{site.title}} {{ site.time | date: '%Y' }}
+                    | <i class="fa-solid fa-plug-circle-plus"></i> Jekyll and Gradfolio.
+                    Last updated on {{ site.time | date_to_long_string }}
+            </small>
+          </p>
+
+        {% include social-footer.html %}
+
+        </footer>
+
+        {% include analytics.html %}
+
+    </body>
+
+</html>

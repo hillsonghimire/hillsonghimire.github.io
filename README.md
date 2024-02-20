@@ -1,7 +1,7 @@
 <div align="center">
 <br>
 
-Hi 🙏, This is my personal website, a modified version of [gradfolio](https://github.com/jitinnair1/gradfolio), powered by Jekyll, hosted on github pages.
+Hi 🙏, This is my personal website, a slight engineering of [gradfolio](https://github.com/jitinnair1/gradfolio), powered by Jekyll, hosted on github pages.
 
 <div align="left">
 
@@ -17,6 +17,8 @@ Hi 🙏, This is my personal website, a modified version of [gradfolio](https://
     Ensure that this `<name>` is the same that you added in `step:1`
 5. Basic `styling` can be modified through: `assets/css/_scss/variables.scss`
 6. To modify the overall layouting of homepage or other pages: `_layouts/default.html`
+
+Note: To add the embed (like instagram posts), I added `_layout/default_embed.html`, the same as `default.html`, but inserting the desirable embeds.
 
 
 #### Build Guide

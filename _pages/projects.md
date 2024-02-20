@@ -5,9 +5,6 @@ permalink: /projects/
 published: true
 ---
 
-## This page is under development
-
-<!--  
 <div class="projectContainer">
 
   <div class="gallery">
@@ -39,5 +36,4 @@ published: true
 
   </div>
 
-</div> 
--->
+</div>
