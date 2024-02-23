@@ -36,8 +36,7 @@ published: true
 </style>
 
 
-<div class="shake" style="font-size:18px;">
-
+<div class="shake" style="font-size:18px; margin-top:15px">
 <b>Hello! 👋 </b>
 </div>
 
@@ -50,11 +49,20 @@ Originally from Nepal, Geoinformatics has taken me places:
 - 2014-2016  - **High School** at Kathmandu Model College (Physics, Biology, Maths Major)
 
 Other that that, I'm low-key addicted to sprinting 🏃‍♂️ like I'm being chased by a swarm of bees 🐝, getting downright giddy 💫 when I spot mountains ⛰️, and fantasizing about me being the next mountain goat 🐐. 
-
 <br>
-<a href="/assets/images/Curriculum_Vitae.pdf" style="color: white;">
+<br>
+
+<a href="/assets/Curriculum_Vitae.pdf" style="color: white;">
   <button class="d_btn">
     <i class="fa fa-download"></i>
     Download my CV
     </button>
 </a>
+
+
+<!-- <div style="max-width:800px;margin:5px auto 10px auto;font-size:15px;text-align:center;">
+  <div style="position:relative;padding: 0 0 67% 0;height:0;overflow:hidden; ">
+      <iframe style="position:absolute;top:0;left:0;width:100%;height:100%;" src="//www.fla-shop.com/visited-countries/embed/?st=AT%2CCZ%2CDE%2CHU%2CIN%2CLA%2CNP%2CQA%2CSA%2CSK%2CTH&vc=1ca032&uc=b3c3ca&hc=40bfa6&bc=ffffff" frameborder="0" scrolling="no">
+      </iframe>
+  </div>Footprints 👣
+</div> -->

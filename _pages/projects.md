@@ -6,7 +6,7 @@ published: true
 ---
 
 <div class="projectContainer">
-
+  <br>
   <div class="gallery">
   
     {% for project in site.projects %}
@@ -35,5 +35,13 @@ published: true
     {% endfor %}
 
   </div>
-
 </div>
+
+<br>
+## Other Short Projects/Analysis
+Several "personal" projects or the ones' built over OpenSource modules are publicly accessible through my githubs, social media, blogs etc.
+There Ain't No Such Thing as a Free Lunch (TANSTAAFL) - except OpenSource.
+1. [<u>Topographic Wetness Index (TWI)</u>](https://github.com/hillsonghimire/EO-training-resources/blob/main/Topographic_Wetness_Index_(TWI).ipynb), on Google Earth Engine *Python API*, Feb 2024
+
+<!-- 2. [Lorem Name](), "*Lorem Ipsum Thesis Title*", BS 22/23, University of Lorem
+3. [Lorem Name](), "*Lorem Ipsum Thesis Title*", BS 22/23, University of Lorem -->
