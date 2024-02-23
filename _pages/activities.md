@@ -10,9 +10,9 @@ published: true
 
 ## Provided Training
 - **Food and Agriculture Organization of the United Nations (FAO), Afghanistan,** a part of enhancing the local capacity for the assessment of local natural resources, land degradation, and biodiversity within Afghanistan by integrating modern geospatial data and technologies.
-    - Jan 2024, <u>Training on Vegetation Degradation Analysis and Impact of Climate Change on Drought and Flood </u> [<u>(github)</u>](https://github.com/hillsonghimire/EO-training-resources/blob/main/gee_py/05.VegetationDegradationStudies/CompoundIndices(VCI%2C_TCI%2C_VHI).ipynb)
+    - Jan 2024, <u>Training on Vegetation Degradation Analysis and Impact of Climate Change on Drought and Flood </u> [<u>(github)</u>](https://github.com/hillsonghimire/EO-training-resources/blob/main/gee_py/05.VegetationDegradationStudies/TemporalStudies%20of%20Vegetation%20(NPP%2C%20GPP%20and%20NDVI).ipynb)
     
-    - Dec 2023, <u>Training on Land Cover Mapping and Water Degradation Analysis using Google Earth Engine (GEE) </u>([github](https://github.com/hillsonghimire/EO-training-resources/blob/main/gee_py/01.GettingStarted/GEE_GettingStarted.ipynb), [video](https://youtu.be/BUxUzVeP-xY))
+    - Dec 2023, <u>Training on Land Cover Mapping and Water Degradation Analysis using Google Earth Engine (GEE) </u>([github](https://github.com/hillsonghimire/EO-training-resources/blob/main/gee_py/02.SurfaceWaterDynamics/1.SurfaceWaterDynamics.ipynb), [video](https://youtu.be/BUxUzVeP-xY))
 
 
 - **Mahatma Phule Krishi Vidyapeeth University, Rahuri, India,** Feb/ March 2023, <u>Working with Geospatial dataset in QGIS</u>, a part of Training on Geospatial Data Analysis - QGIS, Python and Google Earth Engine.
