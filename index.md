@@ -42,11 +42,16 @@ published: true
 
 My name is Hillson Ghimire and I am a **geospatial & satellite data engineer 🛰️**. I employ array of geospatial technologies, including but not limited to earth observation 🌎 and geospatial data science 🐉, to address applications like **natural resource and disaster risk management**.
 
-Originally from Nepal, Geoinformatics has taken me places:
-- 2021- now - **Research Associate** at Geoinformatics Center, AIT
-- 2020-2021 - **Geospatial Intern** at SkyTruth
-- 2016-2021  - **Bachelors' of Engineering** in Geomatics Engineering at IOE, Tribhuvan University
-- 2014-2016  - **High School** at Kathmandu Model College (Physics, Biology, Maths Major)
+Currently, I am a Researcher at the Geospatial Sciences Center of Excellence, SDSU, where I lead AI-driven projects in agricultural monitoring and production forecasting. My current research integrates ground, aerial, and satellite-based multiscale and multimodal remote sensing data through state-of-the-art data fusion techniques to create scalable solutions for precision agriculture.
+
+<u>Originally from Nepal, Geoinformatics has taken me places<u>
+- 2024 - now - **Masters in Geography - GIS Specialization** \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Graduate Research Assistant** \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Center for Geography and Geospatial Sciences, South Dakota State University, USA
+- 2021 - 2024 - **Research Associate** at Geoinformatics Center, AIT, Thailand
+- 2020 - 2021 - **Geospatial Intern** at SkyTruth, USA
+- 2016 - 2021  - **Bachelors' of Engineering** in Geomatics Engineering at IOE, Tribhuvan University, Nepal
+<!-- - 2014 - 2016  - **High School** at Kathmandu Model College (Physics, Biology, Maths Major) -->
 
 Other that that, I'm low-key addicted to sprinting 🏃‍♂️ like I'm being chased by a swarm of bees 🐝, getting downright giddy 💫 when I spot mountains ⛰️, and fantasizing about me being the next mountain goat 🐐. 
 <br>
