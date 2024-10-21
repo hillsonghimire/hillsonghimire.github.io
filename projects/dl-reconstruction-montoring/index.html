@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1" name="viewport">
+        <link rel="stylesheet" href="/assets/css/main.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+        <h1 class="post-headline">Hillson Ghimire</h1>
+        <h3 class="post-description">Researcher at Asian Institute of Technology</h3>
+
+        <div class="links scroll" style="font-size: 17px; font-family: 'Work Sans'; margin-right: 1em; overflow-x:auto; overflow-y: hidden">
+        <hr>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <a href="/"> about</a>
+        <a href="/activities"><i class="fa-solid fa-heart-pulse"></i> activities</a>
+        <a href="/projects/"> projects</a>
+        <!-- <a href="/publications/"> research & pubs.</a> -->
+        <a href="https://hillsonghimire.github.io/blog" target="_blank"><i class="fa-solid fa-blog"></i> blog <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </a>
+        <!-- <a href="https://hillsonghimire.github.io/blog" target="_blank"><i class="fa-solid fa-list"></i> Resume <i class="fa-solid fa-arrow-up-right-from-square"></i></a> -->
+
+        <!-- <a href="/archive/">Archive</a> -->
+        <hr>
+</div>
+
+<!-- WITH ICONS -->
+<!-- 
+
+<div class="links scroll" style="font-size: 17px; font-family: 'Work Sans'; margin-right: 1em; overflow: hidden">
+        <hr>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <a href="/"><i class="fa-regular fa-user"></i> About</a>
+        <a href="/projects/"><i class="fa-solid fa-briefcase"></i> Projects</a>
+        <a href="https://hillsonghimire.github.io/blog" target="_blank"><i class="fa-solid fa-blog"></i> Blog <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </a>
+        <a href="/activities"><i class="fa-solid fa-heart-pulse"></i> Activities</a>
+        <a href="/projects/"><i class="fa-solid fa-brain"></i> Research & Pubs.</a>
+         <a href="https://hillsonghimire.github.io/blog" target="_blank"><i class="fa-solid fa-list"></i> Resume <i class="fa-solid fa-arrow-up-right-from-square"></i></a> -->
+
+        <!-- <a href="/archive/">Archive</a> -->
+        <!-- <hr>
+</div> --> 
+
+
+        <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Monitoring Re/construction on HiRes Imagery | Hillson Ghimire</title>
+<meta name="generator" content="Jekyll v4.3.2" />
+<meta property="og:title" content="Monitoring Re/construction on HiRes Imagery" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Change detection using bitemporal image transformer (BIT) architecture for disaster recovery" />
+<meta property="og:description" content="Change detection using bitemporal image transformer (BIT) architecture for disaster recovery" />
+<link rel="canonical" href="/projects/dl-reconstruction-montoring/" />
+<meta property="og:url" content="/projects/dl-reconstruction-montoring/" />
+<meta property="og:site_name" content="Hillson Ghimire" />
+<meta property="og:image" content="/assets/images/project/building_reconstruction/predict.jpg" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2024-10-21T06:49:00+00:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="/assets/images/project/building_reconstruction/predict.jpg" />
+<meta property="twitter:title" content="Monitoring Re/construction on HiRes Imagery" />
+<meta name="twitter:site" content="@" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-10-21T06:49:00+00:00","datePublished":"2024-10-21T06:49:00+00:00","description":"Change detection using bitemporal image transformer (BIT) architecture for disaster recovery","headline":"Monitoring Re/construction on HiRes Imagery","image":"/assets/images/project/building_reconstruction/predict.jpg","mainEntityOfPage":{"@type":"WebPage","@id":"/projects/dl-reconstruction-montoring/"},"url":"/projects/dl-reconstruction-montoring/"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+        <!-- Generated using https://favicon.io/ -->
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png?">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png?">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png?">
+<link rel="manifest" href=site.webmanifest">
+
+
+        <!-- MathJax -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script>
+
+  <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: { inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+     processEscapes: true
+    }
+  });
+</script>
+
+
+        <!-- Load fontawesome here for faster loadtimes: https://stackoverflow.com/a/35880730/9523246 -->
+        <script type="text/javascript"> (function() { var css = document.createElement('link'); css.href = 'https://use.fontawesome.com/releases/v5.11.0/css/all.css'; css.rel = 'stylesheet'; css.type = 'text/css'; document.getElementsByTagName('head')[0].appendChild(css); })(); </script>
+    </head>
+
+    <body>
+        <main>
+            <article>
+                <h1 class="post-headline">Monitoring Re/construction on HiRes Imagery</h1>
+<p class="meta"><small>October 21, 2024</small></p>
+
+<hr>
+
+<h3 id="implementated-architecture">IMPLEMENTATED ARCHITECTURE</h3>
+<hr>
+
+<div>
+  <img src="/assets/images/project/building_reconstruction/pipeline.png" alt="Result in test dataset" style="max-width:100%">
+</div>
+
+<hr>
+
+<h3 id="background">BACKGROUND</h3>
+<hr>
+
+<h3 id="palu-indonesia-2018-earthquake-event-detail">Palu, Indonesia 2018 earthquake event detail</h3>
+<ol>
+  <li>Event date: 28/09/2018</li>
+  <li>Event type: Earthquake (7.5 MW) and Tsunami <a href="https://www.dfat.gov.au/crisis-hub/sulawesi-earthquake-and-tsunami-response#:~:text=The%20earthquake%20and%20tsunami%20on,Donggala%20in%20Central%20Sulawesi%2C%20Indonesia" target="_blank" rel="noopener noreferrer"><u>(source)</u></a>
+</li>
+  <li>Area affected: Palu and Donggala in Central Sulawesi, Indonesia</li>
+  <li>Population Affected: 2.4 million.</li>
+  <li>Casualties: 2000 deaths, 4600 severely injured, and 210,000 displaced from homes.</li>
+  <li>Homes, critical infrastructures, and buildings, including health services and schools disrupted.
+    <ul>
+      <li>Houses damaged: 70,000.</li>
+    </ul>
+  </li>
+  <li>Other damages:
+    <ul>
+      <li>Parts of Central Sulawesi had been hit by major mudflows following the earthquake because of <a href="https://www.youtube.com/watch?v=v24vLY6Wqc4" target="_blank" rel="noopener noreferrer"><u>(liquefaction).</u></a>
+</li>
+      <li>In Petobo, survivors claimed that 2-meter-high mud came out of ground. Survivors also recalled that the ground immediately turned into liquid-like substance. Hundreds of houses sank into the soil and hundreds of people were drowned by the mudflow.</li>
+      <li>Balora almost disappeared as the ground collapsed, with most of the village’s 1747 houses sinking into the mud.</li>
+      <li>Major soil liquefaction was reported in Sigi Regency, which was located south of Palu.</li>
+    </ul>
+  </li>
+</ol>
+
+<h3 id="problem-statement">Problem Statement</h3>
+<ol>
+  <li>Effectively mapping damaged structures using high resolution satellite imagery.</li>
+  <li>Monitoring reconstruction efforts using the data generated in step 1.</li>
+  <li>Employ damaged structure detection model in high resolution data depending on its availability.</li>
+</ol>
+
+<h3 id="earlier-operational-process">Earlier Operational Process</h3>
+<ol>
+  <li>Utilizing high resolution optical imagery from satellite sources before and different time-stamp of after the disaster to manually map buildings through <u>Visual Inspections.</u>
+</li>
+  <li>Utilizing Small Baseline Subset Interferometric Synthetic Aperture Radar (SBAS-InSAR) to monitor area of land subsidence, and overlaying it to the existing building footprints to monitor the displacement (mm/yr), which could be the proxy to building damages.</li>
+</ol>
+
+<hr>
+
+<h3 id="discussion">DISCUSSION</h3>
+<hr>
+
+<p>In 2019, a paper: H. Chen, Z. Qi and Z. Shi, “Remote Sensing Image Change Detection With Transformers (doi: 10.1109/TGRS.2021.3095166)” was published in IEEE Transactions on Geoscience and Remote Sensing, vol. 60, and was greatly appreciated in the remote sensing community especially ones working on change detection. The paper proposed a bitemporal image transformer (BIT) model and claimed to significantly outperform the pure <u>convolutional baseline using three times lower computational costs and model parameter.</u></p>
+
+<p>Although well heard of its computational efficiency and accuracy, I hadn’t implemented vision transformer model in any of my earlier studies. So, I tried to replicate the work of authors on implementing their same <a href="https://github.com/justchenhao/BIT_CD" target="_blank" rel="noopener noreferrer"><u>architecture</u></a> over the dataset that they used while formulating the studies. I was amazed to see that the results were easily replicable; cannot appreciate enough to the authors in providing the whole implementation with easy guidelines.</p>
+<div>
+  <img src="/assets/images/project/building_reconstruction/predict.jpg" alt="Result in test dataset" style="max-width:100%">
+</div>
+
+<p>The above image demonstrates the immediate result after two hours of training on the <a href="https://paperswithcode.com/dataset/levir-cd" target="_blank" rel="noopener noreferrer"><u>LEVIR-CD dataset</u></a>.</p>
+
+<hr>
+
+<h3 id="challenges">CHALLENGES</h3>
+<hr>
+
+<ol>
+  <li>Training on high-resoulution dataset is resource intersive.</li>
+  <li>Although after major disaster events the disaster charter and other organizations facilitates providing high resolution satellite dataset from Maxar, Digital Globe, PlanetLabs, Pléiades etc., the challenge is to find similar quality of high-resolution pre disaster datasets. Making it a challenge in implementing these solutions.</li>
+  <li>Training with high spatial variability in terms of geospatial region. Because the disaster can occur anywhere, the model performance has to be gauged by taking into account its accuracy at different geospatial context. The training dataset were not very well spatiall distributed, more so for remote rural or hilly contexts.</li>
+</ol>
+
+
+<!-- Comments only for posts -->
+
+
+            </article>
+        </main>
+
+        <footer>
+          <p class="copy">
+            <small> © Hillson Ghimire 2024
+                    | <i class="fa-solid fa-plug-circle-plus"></i> Jekyll and Gradfolio.
+                    Last updated on 21 October 2024
+            </small>
+          </p>
+
+        <div class="rounded-social-buttons">
+<a title="" class="social-button email" itemprop="email" href="mailto:%67%68%69%6D%69%72%65%68%69%6C%6C%73%6F%6E@%67%6D%61%69%6C.%63%6F%6D" target="_blank">
+<i class="fa-solid fa-envelope"></i>
+</a><a title="" class="social-button linkedin" href="https://www.linkedin.com/in/hillsonghimire" itemprop="sameAs" target="_blank" rel="noopener noreferrer">
+<i class="fab fa-linkedin"></i>
+</a><a title="" class="social-button github" href="https://www.github.com/hillsonghimire" itemprop="sameAs" target="_blank" rel="noopener noreferrer">
+<i class="fab fa-github"></i>
+</a><a title="" class="social-button twitter" href="https://www.twitter.com/hillsonghimire" itemprop="sameAs" target="_blank" rel="noopener noreferrer">
+<i class="fa-brands fa-x-twitter"></i>
+</a><a title="" class="social-button stackoverflow" itemprop="sameAs" href="https://gis.stackexchange.com/users/126926" target="_blank" rel="noopener noreferrer">
+<i class="fa-brands fa-stack-exchange"></i>
+</a>
+</div>
+
+
+        </footer>
+
+        <!-- Google Analytics Tracking code -->
+<script src="https://cdn.jsdelivr.net/npm/ga-lite@1/dist/ga-lite.min.js" async></script>
+<script>
+var galite = galite || {};
+galite.UA = '';
+</script>
+
+    </body>
+
+</html>
