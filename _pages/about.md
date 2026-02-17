@@ -21,11 +21,11 @@ I hold a bachelors degree in <b>Geomatics Engineering</b> from Tribhuvan Univers
 
 **MSc in Geography (GIS Specialization) — 4.0/4.0 GPA**  
 South Dakota State University | Graduate Research Assistant | 2024–2026  
-Core Areas: Machine Learning & Deep Learning for Remote Sensing, High Performance Computing, Agricultural & UAS Remote Sensing, Quantitative Remote Sensing, Enterprise Data Modeling  
+<small style="display:block; line-height:1.2; margin:0;">Core Areas: Machine Learning & Deep Learning for Remote Sensing, High Performance Computing, Agricultural & UAS Remote Sensing, Quantitative Remote Sensing, Enterprise Data Modeling</small>  
 
 ---
 
 **B.E. in Geomatics Engineering**  
 Tribhuvan University | 2016–2020  
-Thesis: Automated Road Extraction from Sentinel-2 Imagery using CNN  
-Core Areas: GIS, Remote Sensing, Photogrammetry, Digital Image Processing,  Radar & LiDAR, GPS, Survey Techniques, Python for Geospatial Applications  
+<small style="display:block; line-height:1.2; margin:0;">Thesis: Automated Road Extraction from Sentinel-2 Imagery using CNN <br>
+Core Areas: GIS, Remote Sensing, Photogrammetry, Digital Image Processing,  Radar & LiDAR, GPS, Survey Techniques, Python for Geospatial Applications</small>  
