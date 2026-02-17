@@ -16,29 +16,33 @@ redirect_from:
 .tight-desc { margin-top: -0.2rem; margin-bottom: 0.5rem; }
 .tight-list { margin-top: 0.2rem; margin-bottom: 0.2rem; padding-left: 2rem; }
 .tight-list li { margin-bottom: 0.25rem; }
-
 /* NEW: remove extra gap after section titles and before first job */
-.page__content h2 { margin-bottom: 0.35rem; }
-.page__content h2 + h3.tight-block { margin-top: 0.15rem; }
-
+.page__content h2 { margin: 0.4em 0 0.05rem; padding-top: 0.05rem; }
+.page__content h2 + h3.tight-block { margin-top: 0.02rem; }
 /* NEW: keep spacing consistent between roles */
-.page__content h3.tight-block { margin-top: 0.9rem; }
-.page__content h3.tight-block:first-of-type { margin-top: 0.15rem; }
+.page__content h3.tight-block { margin-top: 0.05rem; }
+.page__content h3.tight-block:first-of-type { margin-top: 0.05rem; }
 </style>
-
 
 
 Education
 ======
-* M.S. in Geography – GIS Specialization, South Dakota State University , May 2026
-* B.E. in Geomatics Engineering, Institute of Engineering, Tribhuvan University, 2020
+**MSc in Geography (GIS Specialization) - 4.0/4.0 GPA**  
+South Dakota State University, Brookings, SD | 2024 - 2026 | Graduate Research Assistant  
+<small style="display:block; line-height:1.35; margin:0; font-size: 0.85rem;">Core Areas: Machine Learning & Deep Learning for Remote Sensing, High Performance Computing, Agricultural & UAS Remote Sensing, Quantitative Remote Sensing, Enterprise Data Modeling</small>
 
-Work experience
+**B.E. in Geomatics Engineering**  
+Institute of Engineering, Tribhuvan University, Pokhara, Nepal | 2016–2020  
+<small style="display:block; line-height:1.35; margin:0; font-size: 0.85rem;">Thesis: Automated Road Extraction from Sentinel-2 Imagery using CNN<br>Core Areas: GIS, Remote Sensing, Photogrammetry, Digital Image Processing, Radar & LiDAR, GPS, Survey Techniques, Python for Geospatial Applications</small>
+
+<hr>
+
+Work Experience
 ======
-<h3 class="tight-block">Graduate Research Assistant — Remote Sensing & Digital Agriculture</h3>
+<h3 class="tight-block">Graduate Research Assistant - Remote Sensing & Digital Agriculture</h3>
 
 <div class="tight-meta">
-South Dakota State University (SDSU), Brookings, SD · Aug 2024 – Present
+South Dakota State University (SDSU), Brookings, SD · Aug 2024 - Present
 </div>
 
 <p class="tight-desc">
@@ -60,7 +64,7 @@ Tech stack: PyTorch · YOLO-OBB · RT-DETR · SAM · GEE · HLS · GCP · Docker
 </p>
 
 
-<h3 class="tight-block">Research Associate — Remote Sensing Analyst</h3>
+<h3 class="tight-block">Research Associate - Remote Sensing Analyst</h3>
 
 <div class="tight-meta">
 Geoinformatics Center, Asian Institute of Technology, Bangkok, Thailand · Feb 2022 – Aug 2024
@@ -79,6 +83,7 @@ Led large-scale Earth observation analytics and operational remote sensing workf
 <li>Executed GEE-based vegetation and groundwater analytics for FAO (Afghanistan) and SAR post-disaster reconstruction monitoring for ADB.</li>
 </ul>
 
+<hr>
 
 Internships
 ======
@@ -102,7 +107,7 @@ Supported operational disaster-response and environmental monitoring systems thr
 <h3 class="tight-block">Geospatial Intern (Remote)</h3>
 
 <div class="tight-meta">
-SkyTruth, Shepherdstown, WV, USA · Sept 2020 – Feb 2021
+SkyTruth, Shepherdstown, WV, USA · Sept 2020 - Feb 2021
 </div>
 
 <p class="tight-desc">
@@ -115,6 +120,7 @@ Applied deep learning and multi-sensor satellite analytics for environmental mon
 <li>Performed PlanetScope-based change analysis for environmental monitoring, producing decision-ready maps and concise technical reports.</li>
 </ul>
 
+<hr>
 
 Skills
 ======
@@ -125,12 +131,16 @@ Skills
   * Sub-skill 2.3
 * Skill 3
 
+<hr>
+
 Publications
 ======
   <ul>{% for post in site.publications reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
-  
+
+<hr style="width: 50%; margin: 40px auto; border: none; height: 2px; background-color: #444;">
+
 Talks
 ======
   {% assign recent_presentations = site.talks | sort: "date" | reverse | slice: 0, 5 %}
@@ -153,6 +163,9 @@ Talks
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
    -->
+
+<hr style="border: none; height: 2px; background-color: gray;">
+
 Service and leadership
 ======
 * Currently signed in to 43 different slack teams
