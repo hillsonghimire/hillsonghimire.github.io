@@ -12,16 +12,57 @@ redirect_from:
 <style>
 /* existing */
 .tight-block { margin-bottom: 0.4rem; }
-.tight-meta { margin-top: -0.4rem; margin-bottom: 0.4rem; font-weight: 600; }
-.tight-desc { margin-top: -0.2rem; margin-bottom: 0.5rem; }
-.tight-list { margin-top: 0.2rem; margin-bottom: 0.2rem; padding-left: 2rem; }
+.tight-meta { margin-top: 0; margin-bottom: 0.4rem; font-weight: 600; }
+.tight-desc { margin-top: 0; margin-bottom: 0.5rem; }
+.tight-list { margin-top: 0.2rem; margin-bottom: 1rem; padding-left: 2rem; }
 .tight-list li { margin-bottom: 0.25rem; }
+/* Indent role details (description + bullets + tech stack) under each title block */
+p.tight-desc,
+ul.tight-list,
+p.tight-block {
+  margin-left: 0;
+}
+p.tight-block {
+  margin-bottom: 1rem;
+}
 /* NEW: remove extra gap after section titles and before first job */
 .page__content h2 { margin: 0.4em 0 0.05rem; padding-top: 0.05rem; }
 .page__content h2 + h3.tight-block { margin-top: 0.02rem; }
 /* NEW: keep spacing consistent between roles */
 .page__content h3.tight-block { margin-top: 0.05rem; }
 .page__content h3.tight-block:first-of-type { margin-top: 0.05rem; }
+.exp-logo {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+  vertical-align: text-bottom;
+  margin-right: 0.35rem;
+}
+.exp-header {
+  position: relative;
+  padding-right: 72px;
+}
+.exp-header .exp-logo {
+  width: 60px;
+  height: 60px;
+  margin: 0;
+  position: absolute;
+  top: calc(0.1rem - 12pt);
+  right: 0;
+  object-fit: contain;
+  z-index: 1;
+}
+.exp-header .exp-header-text {
+  min-width: 0;
+}
+.exp-header .tight-block {
+  margin-top: 0;
+  margin-bottom: 0.1rem;
+}
+.exp-header .tight-meta {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 </style>
 
 
@@ -35,14 +76,18 @@ South Dakota State University, Brookings, SD | 2024 - 2026 | Graduate Research A
 Institute of Engineering, Tribhuvan University, Pokhara, Nepal | 2016–2020  
 <small style="display:block; line-height:1.35; margin:0; font-size: 0.85rem;">Thesis: Automated Road Extraction from Sentinel-2 Imagery using CNN<br>Core Areas: GIS, Remote Sensing, Photogrammetry, Digital Image Processing, Radar & LiDAR, GPS, Survey Techniques, Python for Geospatial Applications</small>
 
-<hr>
+<hr style="border: none; height: 2px; background-color: #cfcfcf;">
 
 Work Experience
 ======
-<h3 class="tight-block">Graduate Research Assistant - Remote Sensing & Digital Agriculture</h3>
-
-<div class="tight-meta">
-South Dakota State University (SDSU), Brookings, SD · Aug 2024 - Present
+<div class="exp-header">
+  <img class="exp-logo" src="{{ '/images/logos/sdsu-logo.svg' | relative_url }}" alt="SDSU logo">
+  <div class="exp-header-text">
+    <h3 class="tight-block">Graduate Research Assistant - Remote Sensing & Digital Agriculture · Aug 2024 - Present</h3>
+    <div class="tight-meta">
+      South Dakota State University (SDSU), Brookings, SD
+    </div>
+  </div>
 </div>
 
 <p class="tight-desc">
@@ -64,10 +109,14 @@ Tech stack: PyTorch · YOLO-OBB · RT-DETR · SAM · GEE · HLS · GCP · Docker
 </p>
 
 
-<h3 class="tight-block">Research Associate - Remote Sensing Analyst</h3>
-
-<div class="tight-meta">
-Geoinformatics Center, Asian Institute of Technology, Bangkok, Thailand · Feb 2022 – Aug 2024
+<div class="exp-header">
+  <img class="exp-logo" src="{{ '/images/logos/ait-globe.png' | relative_url }}" alt="AIT logo">
+  <div class="exp-header-text">
+    <h3 class="tight-block">Research Associate - Remote Sensing Analyst · Feb 2022 – Aug 2024</h3>
+    <div class="tight-meta">
+      Geoinformatics Center, Asian Institute of Technology, Bangkok, Thailand
+    </div>
+  </div>
 </div>
 
 <p class="tight-desc">
@@ -83,14 +132,18 @@ Led large-scale Earth observation analytics and operational remote sensing workf
 <li>Executed GEE-based vegetation and groundwater analytics for FAO (Afghanistan) and SAR post-disaster reconstruction monitoring for ADB.</li>
 </ul>
 
-<hr>
+<hr style="border: none; height: 2px; background-color: #cfcfcf;">
 
 Internships
 ======
-<h3 class="tight-block">GIS Developer Intern</h3>
-
-<div class="tight-meta">
-Geoinformatics Center, Asian Institute of Technology, Bangkok, Thailand · May 2021 – Sept 2021
+<div class="exp-header">
+  <img class="exp-logo" src="{{ '/images/logos/ait-globe.png' | relative_url }}" alt="AIT logo">
+  <div class="exp-header-text">
+    <h3 class="tight-block">GIS Developer Intern · May 2021 – Sept 2021</h3>
+    <div class="tight-meta">
+      Geoinformatics Center, Asian Institute of Technology, Bangkok, Thailand
+    </div>
+  </div>
 </div>
 
 <p class="tight-desc">
@@ -104,10 +157,14 @@ Supported operational disaster-response and environmental monitoring systems thr
 </ul>
 
 
-<h3 class="tight-block">Geospatial Intern (Remote)</h3>
-
-<div class="tight-meta">
-SkyTruth, Shepherdstown, WV, USA · Sept 2020 - Feb 2021
+<div class="exp-header">
+  <img class="exp-logo" src="{{ '/images/logos/skytruth-logo-vdbg-accents.png' | relative_url }}" alt="SkyTruth logo">
+  <div class="exp-header-text">
+    <h3 class="tight-block">Geospatial Intern (Remote) · Sept 2020 - Feb 2021</h3>
+    <div class="tight-meta">
+      SkyTruth, Shepherdstown, WV, USA
+    </div>
+  </div>
 </div>
 
 <p class="tight-desc">
@@ -120,7 +177,7 @@ Applied deep learning and multi-sensor satellite analytics for environmental mon
 <li>Performed PlanetScope-based change analysis for environmental monitoring, producing decision-ready maps and concise technical reports.</li>
 </ul>
 
-<hr>
+<hr style="border: none; height: 2px; background-color: #cfcfcf;">
 
 Skills
 ======
@@ -131,7 +188,7 @@ Skills
   * Sub-skill 2.3
 * Skill 3
 
-<hr>
+<hr style="border: none; height: 2px; background-color: #cfcfcf;">
 
 Publications
 ======
@@ -139,7 +196,7 @@ Publications
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
 
-<hr style="width: 50%; margin: 40px auto; border: none; height: 2px; background-color: #444;">
+<hr style="border: none; height: 2px; background-color: #cfcfcf;">
 
 Talks
 ======
@@ -164,7 +221,7 @@ Talks
   {% endfor %}</ul>
    -->
 
-<hr style="border: none; height: 2px; background-color: gray;">
+<hr style="border: none; height: 2px; background-color: #cfcfcf;">
 
 Service and leadership
 ======
