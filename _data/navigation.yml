@@ -8,8 +8,8 @@
 #      Markdown formatted page while the second is generated using JSON.
 
 main:
-  - title: "publications"
-    url: /publications/
+  # - title: "publications"
+  #   url: /publications/
 
   # - title: "Talks"
   # url: /talks/   
@@ -20,8 +20,8 @@ main:
   # - title: "Teaching"
   #   url: /teaching/    
     
-  - title: "projects"
-    url: /portfolio/
+  # - title: "projects"
+  #   url: /portfolio/
         
   - title: "blog"
     url: https://hillsonghimire.github.io/blog/

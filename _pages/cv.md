@@ -105,12 +105,12 @@ I build production-grade wheat phenotyping platform utilizing computer vision me
       NCR-SARE Wheat-TDM
       </a> project.
       </li>
-      <li>Developed a sub-millimeter precision wheat kernel morphology extraction pipeline (length, width, area) using computer vision with ArUco fiducial-based geometric calibration, enabling high-throughput quantitative genetics selection.</li>
+      <li>Developed a sub-millimeter precision wheat <b>kernel morphology extraction</b> pipeline (length, width, area) using computer vision with ArUco fiducial-based geometric calibration, enabling high-throughput quantitative genetics selection.</li>
       <li>
-      Engineered end-to-end field pipelines for Fusarium Head Blight (FHB) and Fusarium Damaged Kernel (FDK) disease severity assessment, combining UAV and close-range imagery with automated computer vision–based disease quantification.
+      Engineered end-to-end field pipelines for Fusarium Head Blight (FHB) and Fusarium Damaged Kernel (FDK) <b>disease severity assessment</b> on close-range imagery.
       </li>
-      <li>Designed and trained deep learning models for automated stomatal trait analysis from microscope imagery, producing scalable stomatal density and morphology summaries to accelerate phenotyping and reduce manual measurement effort.</li>
-      <li>Led UAV flight operations and field data acquisition, overseeing mission planning, sensor configuration (RGB & multispectral), and end-to-end photogrammetric processing. Produced high-resolution orthomosaics, DSM/DTM surface models, and extracted agronomic indicators including crop vigor indices, nutrient stress proxies, and yield-related metrics to support data-driven decision making.</li>
+      <li>Designed and trained deep learning models for automated <b>stomatal trait analysis</b> from microscope imagery, producing scalable stomatal and pore density and morphology summaries to accelerate phenotyping and reduce manual measurement effort.</li>
+      <li>Led <b>UAV flight operations</b> and field data acquisition, overseeing mission planning, sensor configuration (RGB & multispectral), and end-to-end <b>photogrammetric</b> processing. Produced high-resolution orthomosaics, DSM/DTM surface models, and extracted agronomic indicators including crop vigor indices, nutrient stress proxies, and yield-related metrics to support data-driven decision making.</li>
 </ul>
 
 <p class="tight-block">
@@ -134,8 +134,8 @@ Led large-scale Earth observation analytics and operational remote sensing workf
 </p>
 
 <ul class="tight-list">
-<li>Applied large-scale spatiotemporal analytics in Google Earth Engine (GEE) on multi-decadal satellite archives (Landsat, Sentinel, GRACE; 1975–2024) to quantify vegetation productivity, biomass dynamics, and land condition trends, with in-situ validation for operational decision support.</li>
-<li>Built automated, production-grade remote sensing pipelines for SAR-based surface water change and flood monitoring (Sentinel-1, ALOS-2), reducing processing latency from ~1 week to less than 24 hours and enabling near-real-time environmental monitoring.</li>
+<li>Applied large-scale <b>spatiotemporal analytics</b> in Google Earth Engine (GEE) on multi-decadal satellite archives (Landsat, Sentinel, GRACE; 1975–2024) to quantify vegetation productivity, biomass dynamics, and land condition trends, with in-situ validation for operational decision support.</li>
+<li>Built automated, production-grade remote sensing pipelines for SAR-based surface water change and </b>flood mapping (Sentinel-1, ALOS-2)</b>, reducing processing latency from ~1 week to less than 24 hours and enabling near-real-time environmental monitoring.</li>
 <li>Designed and maintained scalable geospatial data infrastructure integrating hundreds of heterogeneous datasets, ensuring data consistency, reproducibility, and quality control across regions and time.</li>
 <li>Designed and maintained PostgreSQL/PostGIS geospatial data infrastructure and ETL pipelines with clean metadata and traceability.</li>
 </ul>
