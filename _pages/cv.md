@@ -15,7 +15,10 @@ redirect_from:
 .tight-meta { margin-top: 0; margin-bottom: 0.4rem; font-weight: 600; }
 .tight-desc { margin-top: 0; margin-bottom: 0.5rem; }
 .tight-list { margin-top: 0.2rem; margin-bottom: 1rem; padding-left: 2rem; }
-.tight-list li { margin-bottom: 0.25rem; }
+.tight-list li { margin-bottom: 0.15rem; font-size: 0.95rem; line-height: 1.35; }
+/* compact list style for Talks */
+.talks-list { margin-top: 0.4rem; margin-bottom: 1rem; padding-left: 1.8rem; }
+.talks-list li { margin-bottom: 0.12rem; font-size: 0.95rem; line-height: 1.35; }
 /* Indent role details (description + bullets + tech stack) under each title block */
 p.tight-desc,
 ul.tight-list,
@@ -32,37 +35,29 @@ p.tight-block {
 .page__content h3.tight-block { margin-top: 0.05rem; }
 .page__content h3.tight-block:first-of-type { margin-top: 0.05rem; }
 .exp-logo {
-  width: 18px;
-  height: 18px;
+  width: 52px;
+  height: 52px;
   object-fit: contain;
-  vertical-align: text-bottom;
-  margin-right: 0.35rem;
 }
 .exp-header {
-  position: relative;
-  padding-right: 72px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 0.35rem;
 }
-.exp-header .exp-logo {
-  width: 60px;
-  height: 60px;
-  margin: 0;
-  position: absolute;
-  top: calc(0.1rem - 12pt);
-  right: 0;
-  object-fit: contain;
-  z-index: 1;
+.exp-header .exp-header-text { flex: 1 1 auto; min-width: 0; }
+.exp-header .tight-block { margin-top: 0; margin-bottom: 0.1rem; }
+.exp-header .tight-meta { margin-top: 0; margin-bottom: 0; }
+.exp-meta-right {
+  flex: 0 0 auto;
+  text-align: right;
+  font-size: 0.95rem;
+  line-height: 1.25;
+  min-width: 140px;
 }
-.exp-header .exp-header-text {
-  min-width: 0;
-}
-.exp-header .tight-block {
-  margin-top: 0;
-  margin-bottom: 0.1rem;
-}
-.exp-header .tight-meta {
-  margin-top: 0;
-  margin-bottom: 0;
-}
+.exp-meta-right .exp-dates { font-weight: 600; }
+.exp-meta-right .exp-location { color: var(--global-muted-text-color, #666); }
 </style>
 
 
@@ -81,42 +76,57 @@ Institute of Engineering, Tribhuvan University, Pokhara, Nepal | 2016–2020
 Work Experience
 ======
 <div class="exp-header">
-  <img class="exp-logo" src="{{ '/images/logos/sdsu-logo.svg' | relative_url }}" alt="SDSU logo">
   <div class="exp-header-text">
-    <h3 class="tight-block">Graduate Research Assistant - Remote Sensing & Digital Agriculture · Aug 2024 - Present</h3>
-    <div class="tight-meta">
-      South Dakota State University (SDSU), Brookings, SD
-    </div>
+    <h3 class="tight-block">Graduate Research Assistant - Remote Sensing & Digital Agriculture</h3>
+    <div class="tight-meta">South Dakota State University (SDSU)</div>
   </div>
+  <div class="exp-meta-right">
+    <div class="exp-dates">Aug 2024 – Present</div>
+    <div class="exp-location">Brookings, SD</div>
+  </div>
+  <img class="exp-logo" src="{{ '/images/logos/sdsu-logo.svg' | relative_url }}" alt="SDSU logo">
 </div>
 
 <p class="tight-desc">
-I build production-grade Earth observation and computer vision systems for high-throughput wheat phenotyping, turning UAV, close-range, and satellite imagery into validated traits used directly in breeding workflows.
+I build production-grade wheat phenotyping platform utilizing computer vision methods, turning UAV, close-range, and satellite imagery into traits useful in breeding pipelines.
 </p>
 
 <ul class="tight-list">
-<li>Built and deployed a cloud-native phenotyping platform (wheatai.net) on GCP, converting multi-source imagery into quantitative phenotypes; utility patent under consideration.</li>
-<li>Developed satellite-based wheat tiller density mapping using HLS via the GEE Python API, benchmarked against field measurements for the USDA NCR-SARE Wheat-TDM project.</li>
-<li>Trained vision models in PyTorch (YOLO-OBB, RT-DETR, SAM) robust to variable illumination and canopy variability.</li>
-<li>Designed high-throughput RGB/multispectral pipelines with QA/QC; two manuscripts under review.</li>
-<li>Engineered Dockerized PyTorch inference on GCP for asynchronous ingestion and scalable delivery.</li>
-<li>Led validation with breeders, translating outputs into operational decisions and funding proposals.
-</li>
+      <li>
+      Built and deployed a cloud-native phenotyping platform 
+      <a href="https://wheatai.net/" target="_blank" rel="noopener">
+      WheatAI.net
+      </a> 
+      , converting multi-source imagery into quantitative phenotypes such as wheat spike, spikelet, and kernel counts.
+      </li>
+      <li>
+      Deployed satellite-based wheat tiller density mapping using Harmonized Landsat Sentinel via the GEE Python API, benchmarked against field measurements for the 
+      <a href="https://projects.sare.org/sare_project/gnc25-412/" target="_blank" rel="noopener">
+      NCR-SARE Wheat-TDM
+      </a> project.
+      </li>
+      <li>Developed a sub-millimeter precision wheat kernel morphology extraction pipeline (length, width, area) using computer vision with ArUco fiducial-based geometric calibration, enabling high-throughput quantitative genetics selection.</li>
+      <li>
+      Engineered end-to-end field pipelines for Fusarium Head Blight (FHB) and Fusarium Damaged Kernel (FDK) disease severity assessment, combining UAV and close-range imagery with automated computer vision–based disease quantification.
+      </li>
+      <li>Designed and trained deep learning models for automated stomatal trait analysis from microscope imagery, producing scalable stomatal density and morphology summaries to accelerate phenotyping and reduce manual measurement effort.</li>
+      <li>Led UAV flight operations and field data acquisition, overseeing mission planning, sensor configuration (RGB & multispectral), and end-to-end photogrammetric processing. Produced high-resolution orthomosaics, DSM/DTM surface models, and extracted agronomic indicators including crop vigor indices, nutrient stress proxies, and yield-related metrics to support data-driven decision making.</li>
 </ul>
 
 <p class="tight-block">
-Tech stack: PyTorch · YOLO-OBB · RT-DETR · SAM · GEE · HLS · GCP · Docker · UAV phenotyping
+Tech stack: PyTorch · Object Detection (YOLO-OBB, RT-DETR, SAM) · HLS · GCP · Docker · UAV phenotyping
 </p>
 
-
 <div class="exp-header">
-  <img class="exp-logo" src="{{ '/images/logos/ait-globe.png' | relative_url }}" alt="AIT logo">
   <div class="exp-header-text">
-    <h3 class="tight-block">Research Associate - Remote Sensing Analyst · Feb 2022 – Aug 2024</h3>
-    <div class="tight-meta">
-      Geoinformatics Center, Asian Institute of Technology, Bangkok, Thailand
-    </div>
+    <h3 class="tight-block">Research Associate - Remote Sensing Analyst</h3>
+    <div class="tight-meta">Geoinformatics Center, Asian Institute of Technology</div>
   </div>
+  <div class="exp-meta-right">
+    <div class="exp-dates">Feb 2022 – Aug 2024</div>
+    <div class="exp-location">Bangkok, Thailand</div>
+  </div>
+  <img class="exp-logo" src="{{ '/images/logos/ait-globe.png' | relative_url }}" alt="AIT logo">
 </div>
 
 <p class="tight-desc">
@@ -124,26 +134,30 @@ Led large-scale Earth observation analytics and operational remote sensing workf
 </p>
 
 <ul class="tight-list">
-<li>Led country-scale EO analytics using Landsat and Sentinel-1/2 to quantify vegetation dynamics and surface water trends.</li>
-<li>Built production SAR and optical processing pipelines, reducing processing latency from ~1 week to under 24 hours.</li>
-<li>Authored reproducible Python-based multi-temporal optical and SAR workflows with QA/QC for rapid disaster-response deployment.</li>
+<li>Applied large-scale spatiotemporal analytics in Google Earth Engine (GEE) on multi-decadal satellite archives (Landsat, Sentinel, GRACE; 1975–2024) to quantify vegetation productivity, biomass dynamics, and land condition trends, with in-situ validation for operational decision support.</li>
+<li>Built automated, production-grade remote sensing pipelines for SAR-based surface water change and flood monitoring (Sentinel-1, ALOS-2), reducing processing latency from ~1 week to less than 24 hours and enabling near-real-time environmental monitoring.</li>
+<li>Designed and maintained scalable geospatial data infrastructure integrating hundreds of heterogeneous datasets, ensuring data consistency, reproducibility, and quality control across regions and time.</li>
 <li>Designed and maintained PostgreSQL/PostGIS geospatial data infrastructure and ETL pipelines with clean metadata and traceability.</li>
-<li>Delivered Google Earth Engine training for FAO-affiliated technical staff to operationalize vegetation and land-productivity monitoring.</li>
-<li>Executed GEE-based vegetation and groundwater analytics for FAO (Afghanistan) and SAR post-disaster reconstruction monitoring for ADB.</li>
 </ul>
+
+<p class="tight-block">
+Tech stack: ArcGIS/QGIS · Linux · Google Earth Engine · PostgreSQL · Geoserver · Google Cloud
+</p>
 
 <hr style="border: none; height: 2px; background-color: #cfcfcf;">
 
 Internships
 ======
 <div class="exp-header">
-  <img class="exp-logo" src="{{ '/images/logos/ait-globe.png' | relative_url }}" alt="AIT logo">
   <div class="exp-header-text">
-    <h3 class="tight-block">GIS Developer Intern · May 2021 – Sept 2021</h3>
-    <div class="tight-meta">
-      Geoinformatics Center, Asian Institute of Technology, Bangkok, Thailand
-    </div>
+    <h3 class="tight-block">GIS Developer Intern</h3>
+    <div class="tight-meta">Geoinformatics Center, Asian Institute of Technology</div>
   </div>
+  <div class="exp-meta-right">
+    <div class="exp-dates">May 2021 – Sept 2021</div>
+    <div class="exp-location">Bangkok, Thailand</div>
+  </div>
+  <img class="exp-logo" src="{{ '/images/logos/ait-globe.png' | relative_url }}" alt="AIT logo">
 </div>
 
 <p class="tight-desc">
@@ -158,13 +172,15 @@ Supported operational disaster-response and environmental monitoring systems thr
 
 
 <div class="exp-header">
-  <img class="exp-logo" src="{{ '/images/logos/skytruth-logo-vdbg-accents.png' | relative_url }}" alt="SkyTruth logo">
   <div class="exp-header-text">
-    <h3 class="tight-block">Geospatial Intern (Remote) · Sept 2020 - Feb 2021</h3>
-    <div class="tight-meta">
-      SkyTruth, Shepherdstown, WV, USA
-    </div>
+    <h3 class="tight-block">Geospatial Intern (Remote)</h3>
+    <div class="tight-meta">SkyTruth</div>
   </div>
+  <div class="exp-meta-right">
+    <div class="exp-dates">Sept 2020 – Feb 2021</div>
+    <div class="exp-location">Shepherdstown, WV, USA</div>
+  </div>
+  <img class="exp-logo" src="{{ '/images/logos/skytruth-logo-vdbg-accents.png' | relative_url }}" alt="SkyTruth logo">
 </div>
 
 <p class="tight-desc">
@@ -174,34 +190,34 @@ Applied deep learning and multi-sensor satellite analytics for environmental mon
 <ul class="tight-list">
 <li>Developed U-Net segmentation workflows in Google Earth Engine using Sentinel-2 imagery for road detection and surface-change analysis.</li>
 <li>Conducted SAR-based detection of illegal oil dumping using rapid screening pipelines in GEE.</li>
-<li>Performed PlanetScope-based change analysis for environmental monitoring, producing decision-ready maps and concise technical reports.</li>
+<li>Performed PlanetScope-based change analysis for environmental monitoring, producing decision-ready maps and concise social media posts.</li>
 </ul>
 
-<hr style="border: none; height: 2px; background-color: #cfcfcf;">
+<!-- <hr style="border: none; height: 2px; background-color: #cfcfcf;"> -->
 
-Skills
+<!-- Skills
 ======
 * Skill 1
 * Skill 2
   * Sub-skill 2.1
   * Sub-skill 2.2
   * Sub-skill 2.3
-* Skill 3
+* Skill 3 -->
 
-<hr style="border: none; height: 2px; background-color: #cfcfcf;">
+<!-- <hr style="border: none; height: 2px; background-color: #cfcfcf;">
 
 Publications
 ======
   <ul>{% for post in site.publications reversed %}
     {% include archive-single-cv.html %}
-  {% endfor %}</ul>
+  {% endfor %}</ul> -->
 
 <hr style="border: none; height: 2px; background-color: #cfcfcf;">
 
 Talks
 ======
   {% assign recent_presentations = site.talks | sort: "date" | reverse | slice: 0, 5 %}
-  <ul>
+  <ul class="talks-list">
     {% for post in recent_presentations %}
       <li>
         {{ post.title }}
@@ -223,6 +239,6 @@ Talks
 
 <hr style="border: none; height: 2px; background-color: #cfcfcf;">
 
-Service and leadership
+<!-- Service and leadership
 ======
-* Currently signed in to 43 different slack teams
+* Currently signed in to 43 different slack teams -->

@@ -11,13 +11,22 @@ author_profile: true
 
 <style>
   .presentations-list a {
-    color: #2f5d8a;
+    color: var(--global-link-color, #2f5d8a);
     text-decoration: none;
   }
   .presentations-list a:hover,
   .presentations-list a:focus {
-    color: #244a6e;
-    text-decoration: none;
+    color: var(--global-theme-color, #4a8ad6);
+    text-decoration: underline;
+  }
+  @media (prefers-color-scheme: dark) {
+    .presentations-list a {
+      color: #82c4ff;
+    }
+    .presentations-list a:hover,
+    .presentations-list a:focus {
+      color: #b6daff;
+    }
   }
   .presentations-list li {
     font-size: 0.95rem;
