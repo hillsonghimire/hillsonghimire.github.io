@@ -8,31 +8,11 @@
 #      Markdown formatted page while the second is generated using JSON.
 
 main:
-  # - title: "publications"
-  #   url: /publications/
+  - title: "Publications"
+    url: /#publications
 
-  # - title: "Talks"
-  # url: /talks/   
-
-  - title: "talks"
+  - title: "Presentations"
     url: /presentations/
 
-  # - title: "Teaching"
-  #   url: /teaching/    
-    
-  # - title: "projects"
-  #   url: /portfolio/
-        
-  - title: "blog"
-    url: https://hillsonghimire.github.io/blog/
-    target: _blank
-    rel: noopener noreferrer
-    
-  - title: "resume"
+  - title: "CV"
     url: /cv/
-    
-  # - title: "CV"
-  #   url: /cv-json/
-    
-  # - title: "Guide"
-  #   url: /markdown/
