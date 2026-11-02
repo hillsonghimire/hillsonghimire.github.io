@@ -12,7 +12,7 @@ site_theme               : "default" # The available themes options are "default
 title                    : "Hillson Ghimire"
 title_separator          : "-"
 name                     : &name "Hillson Ghimire"
-description              : &description "PhD student at Rice University working on remote sensing, hydrology, and machine learning"   # Update this with a general description of your site, this is the default if not overridden by a page
+description              : &description "Hillson Ghimire is a GIS and remote sensing professional working on hydrology and machine learning"   # Update this with a general description of your site, this is the default if not overridden by a page
 url                      : https://hillsonghimire.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -26,7 +26,7 @@ author:
   avatar           : "hillson-ghimire.jpg"
   name             : "Hillson Ghimire"
   pronouns         : # example: "she/her"  
-  bio              : "PhD student, Rice University. Remote sensing, hydrology, and machine learning."
+  bio              : "GIS and remote sensing professional. Hydrology and machine learning."
   location         : "Houston, TX"
   employer         : "Rice University"
   uri              : # URL
@@ -151,6 +151,9 @@ social:
   type                   : # Person or Organization (defaults to Person)
   name                   : # If the user or organization name differs from the site's name
   links: # An array of links to social media profiles
+    - "https://scholar.google.com/citations?user=gm6EoPoAAAAJ"
+    - "https://github.com/hillsonghimire"
+    - "https://www.linkedin.com/in/hillsonghimire"
 
 
 # Analytics

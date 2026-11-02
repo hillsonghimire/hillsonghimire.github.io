@@ -2,7 +2,7 @@
 
 Source for my personal academic website: **https://hillsonghimire.github.io/**
 
-I am a PhD student at Rice University working on remote sensing, hydrology, and machine learning.
+I am a GIS and remote sensing professional working on hydrology and machine learning.
 
 ## Where things are
 

@@ -2,7 +2,7 @@
 layout: minimal
 title: "CV"
 show_title: false
-excerpt: "Curriculum vitae of Hillson Ghimire, PhD student at Rice University: remote sensing, hydrology, and machine learning."
+excerpt: "Curriculum vitae of Hillson Ghimire, GIS and remote sensing professional: hydrology and machine learning."
 permalink: /cv/
 redirect_from:
   - /resume
