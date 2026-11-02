@@ -7,7 +7,7 @@ redirect_from:
 ---
 
 <header class="cv-head">
-  <p class="cv-downloads no-print">PDF: <a href="{{ '/files/Hillson_Ghimire_CV.pdf' | relative_url }}?v={{ site.time | date: '%s' }}" target="_blank" rel="noopener">CV</a> / <a href="{{ '/files/Hillson_Ghimire_Resume_GIS.pdf' | relative_url }}?v={{ site.time | date: '%s' }}" target="_blank" rel="noopener">Resume</a></p>
+  <p class="cv-downloads no-print">PDF: <a href="{{ '/files/Hillson_Ghimire_CV.pdf' | relative_url }}?v={{ site.time | date: '%s' }}" target="_blank" rel="noopener">CV</a> / <a href="{{ '/files/Hillson_Ghimire_Resume.pdf' | relative_url }}?v={{ site.time | date: '%s' }}" target="_blank" rel="noopener">Resume</a></p>
   <h1>Hillson Ghimire</h1>
   <p>PhD Student, Earth, Environmental and Planetary Sciences, Rice University, Houston, TX</p>
   <p><a href="mailto:hg77@rice.edu">hg77@rice.edu</a> &nbsp;/&nbsp; <a href="https://hillsonghimire.github.io/">Website</a> &nbsp;/&nbsp; <a href="https://scholar.google.com/citations?user=gm6EoPoAAAAJ&amp;hl=en&amp;oi=ao">Google Scholar</a> &nbsp;/&nbsp; <a href="https://github.com/hillsonghimire">GitHub</a> &nbsp;/&nbsp; <a href="https://www.linkedin.com/in/hillsonghimire">LinkedIn</a></p>
