@@ -1,0 +1,28 @@
+{% for talk in site.data.presentations %}
+<div class="pres{% if include.visible and forloop.index > include.visible %} pres-extra{% endif %}">
+  <div class="pres-date">{{ talk.date }}</div>
+  <div class="pres-body">
+    <div class="pres-title">{{ talk.title }}{% if talk.link %} &nbsp;<a class="title-link" href="{{ talk.link.url }}">{{ talk.link.label }}</a>{% endif %}</div>
+    <div class="pres-meta">{{ talk.authors }}, {{ talk.venue }}</div>
+  </div>
+</div>
+{% endfor %}
+{% if include.visible %}
+<button type="button" class="pres-toggle" hidden></button>
+<script>
+(function () {
+  var extras = document.querySelectorAll('.pres-extra');
+  var button = document.querySelector('.pres-toggle');
+  function setExpanded(expanded) {
+    extras.forEach(function (item) { item.hidden = !expanded; });
+    button.textContent = expanded ? 'show less' : 'show ' + extras.length + ' more';
+    button.setAttribute('aria-expanded', expanded);
+  }
+  button.addEventListener('click', function () {
+    setExpanded(button.getAttribute('aria-expanded') !== 'true');
+  });
+  button.hidden = false;
+  setExpanded(false);
+})();
+</script>
+{% endif %}

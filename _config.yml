@@ -12,7 +12,7 @@ site_theme               : "default" # The available themes options are "default
 title                    : "Hillson Ghimire"
 title_separator          : "-"
 name                     : &name "Hillson Ghimire"
-description              : &description "Ph.D. student at Rice University working on environmental remote sensing and hydrology"   # Update this with a general description of your site, this is the default if not overridden by a page
+description              : &description "PhD student at Rice University working on remote sensing, hydrology, and machine learning"   # Update this with a general description of your site, this is the default if not overridden by a page
 url                      : https://hillsonghimire.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -26,7 +26,7 @@ author:
   avatar           : "hillson-ghimire.png"
   name             : "Hillson Ghimire"
   pronouns         : # example: "she/her"  
-  bio              : "Ph.D. student, Rice University. Environmental remote sensing, hydrology, and agricultural geospatial intelligence."
+  bio              : "PhD student, Rice University. Remote sensing, hydrology, and machine learning."
   location         : "Houston, TX"
   employer         : "Rice University"
   uri              : # URL
@@ -237,6 +237,11 @@ collections:
 
 # These settings control how pages and collections are included in the site
 defaults:
+  # Reached from the footer link only, so keep it out of sitemap.xml
+  - scope:
+      path: "files/Hillson_Ghimire_Resume_GIS.pdf"
+    values:
+      sitemap: false
   # _posts
   - scope:
       path: ""

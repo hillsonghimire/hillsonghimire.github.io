@@ -1,0 +1,2 @@
+<div class="pub-title">{{ include.pub.title }} &nbsp;{% for link in include.pub.links %}<a class="title-link" href="{{ link.url }}">{{ link.label }}</a>{% unless forloop.last %} <span class="title-link">/</span> {% endunless %}{% endfor %}</div>
+<div>{{ include.pub.authors }}, {{ include.pub.venue }}</div>

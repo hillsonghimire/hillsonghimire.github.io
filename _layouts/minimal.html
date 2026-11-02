@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="{{ site.locale | slice: 0,2 | default: 'en' }}">
+<head>
+  <meta charset="utf-8">
+  {% include seo.html %}
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="{{ '/images/favicon-32x32.png' | relative_url }}" sizes="32x32">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ '/assets/css/minimal.css' | relative_url }}?v={{ site.time | date: '%s' }}">
+</head>
+<body id="top">
+  <header class="site-nav">
+    <nav aria-label="Main">
+      <a href="{{ '/' | relative_url }}"{% if page.url == "/" %} class="current" aria-current="page"{% endif %}>home</a>
+      {% for link in site.data.navigation.main %}
+      {% if link.url contains '://' %}
+      <a href="{{ link.url }}"{% if link.target %} target="{{ link.target }}"{% endif %}{% if link.rel %} rel="{{ link.rel }}"{% endif %}>{{ link.title }}</a>
+      {% else %}
+      <a href="{{ link.url | relative_url }}"{% if page.url == link.url %} class="current" aria-current="page"{% endif %}>{{ link.title }}</a>
+      {% endif %}
+      {% endfor %}
+    </nav>
+  </header>
+  <main class="wrap">
+    {% if page.url != "/" %}
+    {% if page.title %}<h1 class="page-title">{{ page.title }}</h1>{% endif %}
+    {% endif %}
+    <div class="content">
+      {{ content }}
+    </div>
+    <p class="foot">Design inspired by <a href="https://jonbarron.info/">Jon Barron</a>.</p>
+    <a class="epsg no-print" href="{{ '/files/Hillson_Ghimire_Resume_GIS.pdf' | relative_url }}?v={{ site.time | date: '%s' }}" download="Hillson_Ghimire_Resume.pdf">EPSG:4326</a>
+  </main>
+  <a class="to-top" href="#top" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+  </a>
+  <script>
+    (function () {
+      var button = document.querySelector('.to-top');
+      function update() { button.classList.toggle('show', window.scrollY > 400); }
+      window.addEventListener('scroll', update, { passive: true });
+      update();
+    })();
+  </script>
+</body>
+</html>
