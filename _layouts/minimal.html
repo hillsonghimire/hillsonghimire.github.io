@@ -12,6 +12,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{{ '/assets/css/minimal.css' | relative_url }}?v={{ site.time | date: '%s' }}">
+  {% if jekyll.environment == "production" %}{% include analytics.html %}{% endif %}
 </head>
 <body id="top">
   <a class="skip-link" href="#main">Skip to content</a>
