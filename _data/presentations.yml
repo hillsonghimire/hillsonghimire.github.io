@@ -5,14 +5,14 @@
     "title": "Automated wheat spike detection and counting using UAV-based digital imagery and deep learning",
     "link": null,
     "authors": "<b>H. Ghimire</b>, M. Maimaitijiang, U. U. R. Janjua, S. Sehgal, M. M. Billah, K. Poudel, et al.",
-    "venue": "<i>AGU25</i>, Louisiana, USA"
+    "venue": "<i>AGU25</i>, New Orleans, LA"
   },
   {
     "date": "Dec 2025",
     "title": "Predicting wheat grain yield and quality using multitemporal and multispectral UAS imagery with transformer models",
     "link": null,
     "authors": "K. Poudel, M. Maimaitijiang, S. Subedi, S. Kaushal, M. M. Billah, <b>H. Ghimire</b>, et al.",
-    "venue": "<i>AGU25</i>, Louisiana, USA"
+    "venue": "<i>AGU25</i>, New Orleans, LA"
   },
   {
     "date": "Nov 2025",
@@ -31,7 +31,7 @@
       "label": "abstract",
       "url": "https://scisoc.confex.com/scisoc/2025am/meetingapp.cgi/Paper/168555"
     },
-    "authors": "S. Thapa, M. Singh, <b>H. Ghimire</b>, D. Koupal, S. Kaushal, J. Halder, M. Maimaitijiang, and S. K. Sehgal",
+    "authors": "S. Thapa, M. Singh, <b>H. Ghimire</b>, D. Koupal, S. Kaushal, J. Halder, K. Kaur, S. Ali, J. Zhang, M. Maimaitijiang, and S. K. Sehgal",
     "venue": "<i>CANVAS 2025</i>, Salt Lake City, UT"
   },
   {
@@ -62,7 +62,7 @@
     "date": "Feb 2025",
     "title": "Wheat spike and spikelet detection on close-range digital imagery using deep learning",
     "link": {
-      "label": "poster",
+      "label": "abstract",
       "url": "https://openprairie.sdstate.edu/datascience_symposium/2025/posters/9/"
     },
     "authors": "<b>H. Ghimire</b>, M. Maimaitijiang, S. Kaushal, D. Koupal, K. Poudel, S. Thapa, S. Subedi, U. U. R. Janjua, J. Halder, and S. K. Sehgal",
@@ -72,7 +72,7 @@
     "date": "Nov 2024",
     "title": "Wheat head detection from close-range digital imagery using deep learning",
     "link": {
-      "label": "poster",
+      "label": "photo",
       "url": "https://www.usgs.gov/media/images/eros-fall-poster-session-2024-4"
     },
     "authors": "<b>H. Ghimire</b>, M. Maimaitijiang, S. Kaushal, D. J. Koupal, and S. K. Sehgal",
@@ -86,13 +86,13 @@
     "venue": "<i>2024 GPRM Annual Meeting</i>, Utah Valley University, UT"
   },
   {
-    "date": "Nov 2022",
+    "date": "Dec 2022",
     "title": "The intricacies in the implementation of integrated geospatial platform, database, and application for disaster risk management in Uttarakhand",
     "link": {
       "label": "paper",
       "url": "https://sciforum.net/paper/view/13598"
     },
-    "authors": "<b>H. Ghimire</b> and M. Hazarika",
-    "venue": "<i>MDPI</i>, Pattaya, Thailand"
+    "authors": "<b>H. Ghimire</b> and M. K. Hazarika",
+    "venue": "<i>OHOW 2022</i>, Pattaya, Thailand"
   }
 ]

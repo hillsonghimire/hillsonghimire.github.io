@@ -4,7 +4,6 @@ permalink: /
 redirect_from: 
   - /about/
   - /about.html
-  - /publications/
 ---
 
 <section class="intro">
@@ -16,13 +15,13 @@ redirect_from:
     <p>My email is hg77 (at) rice (dot) edu. Feel free to reach out to talk about research!</p>
     <p class="intro-links"><a href="mailto:hg77@rice.edu">Email</a> &nbsp;/&nbsp; <a href="{{ '/cv/' | relative_url }}">CV</a> &nbsp;/&nbsp; <a href="https://scholar.google.com/citations?user=gm6EoPoAAAAJ&amp;hl=en&amp;oi=ao">Google Scholar</a> &nbsp;/&nbsp; <a href="https://github.com/hillsonghimire">GitHub</a> &nbsp;/&nbsp; <a href="https://www.linkedin.com/in/hillsonghimire">LinkedIn</a></p>
   </div>
-  <div class="intro-photo"><img src="{{ '/images/hillson-ghimire.png' | relative_url }}" alt="Hillson Ghimire"></div>
+  <div class="intro-photo"><img src="{{ '/images/hillson-ghimire.jpg' | relative_url }}" alt="Hillson Ghimire"></div>
 </section>
 
 <h2 id="news">Recent News</h2>
 <ul class="news">
   <li><span class="news-date">Aug 2026</span><span>Started my PhD in Earth, Environmental and Planetary Sciences at Rice University.</span></li>
-  <li><span class="news-date">Aug 2026</span><span>Awarded the Ken Kennedy Institute Computational Science and Engineering Recruiting Fellowship at Rice University.</span></li>
+  <li><span class="news-date">Aug 2026</span><span>Awarded the Ken Kennedy Institute Computational Science and Engineering Recruiting Fellowship ($15,000) at Rice University.</span></li>
   <li><span class="news-date">Jul 2026</span><span>Completed my MS at South Dakota State University. <a class="title-link" href="https://openprairie.sdstate.edu/etd2/2136">thesis</a></span></li>
   <li><span class="news-date">Jun 2026</span><span>Our wheat spike and spikelet detection paper was published in <i>Scientific Reports</i>. <a class="title-link" href="https://doi.org/10.1038/s41598-026-55761-w">paper</a></span></li>
   <li><span class="news-date">Jun 2026</span><span>Served as Teaching Assistant and guest lecturer for Remote Sensing for Disaster Response at MIT Lincoln Laboratory, through August.</span></li>

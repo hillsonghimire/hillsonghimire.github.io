@@ -16,14 +16,14 @@ description              : &description "PhD student at Rice University working 
 url                      : https://hillsonghimire.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "academicpages/academicpages.github.io"
+repository               : "hillsonghimire/hillsonghimire.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "hillson-ghimire.png"
+  avatar           : "hillson-ghimire.jpg"
   name             : "Hillson Ghimire"
   pronouns         : # example: "she/her"  
   bio              : "PhD student, Rice University. Remote sensing, hydrology, and machine learning."
@@ -143,7 +143,7 @@ facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 : hillson-ghimire.png  # Social media default site image (lives in /images/)
+og_image                 : hillson-ghimire.jpg  # Social media default site image (lives in /images/)
 og_description           :  # Social media default site image description
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
@@ -166,6 +166,17 @@ include:
   - _pages
   - files
 exclude:
+  - package-lock.json
+  - assets/css/collapse.css
+  - assets/css/academicons.min.css
+  - README.md
+  - scripts
+  - assets/js
+  - assets/webfonts
+  - assets/css/main.scss
+  - assets/css/academicons.css
+  - assets/fonts
+  - _config_docker.yml
   - "*.sublime-project"
   - "*.sublime-workspace"
   - .asset-cache
@@ -220,19 +231,6 @@ kramdown:
 
 
 # These settings control the types of collections used by the template
-collections:
-  teaching:
-    output: true
-    permalink: /:collection/:path/
-  publications:
-    output: true
-    permalink: /:collection/:path/
-  portfolio:
-    output: true
-    permalink: /:collection/:path/
-  talks:
-    output: true
-    permalink: /:collection/:path/
 
 
 # These settings control how pages and collections are included in the site
@@ -312,7 +310,6 @@ timezone: America/Chicago # https://en.wikipedia.org/wiki/List_of_tz_database_ti
 
 # Plugins
 plugins:
-  - jekyll-feed
   - jekyll-gist
   - jekyll-paginate
   - jekyll-sitemap
@@ -321,7 +318,6 @@ plugins:
 
 # Mimic GitHub Pages with --safe
 whitelist:
-  - jekyll-feed
   - jekyll-gist
   - jekyll-paginate
   - jekyll-sitemap

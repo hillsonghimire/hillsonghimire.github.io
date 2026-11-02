@@ -1,9 +1,12 @@
 ---
 layout: minimal
-# title: "Resume"
+title: "CV"
+show_title: false
+excerpt: "Curriculum vitae of Hillson Ghimire, PhD student at Rice University: remote sensing, hydrology, and machine learning."
 permalink: /cv/
 redirect_from:
   - /resume
+  - /resume/
 ---
 
 <header class="cv-head">
@@ -15,8 +18,7 @@ redirect_from:
 
 <hr>
 
-Education
-======
+## Education
 <div class="exp-header">
   <div class="exp-header-text">
     <h3 class="tight-block">PhD in Earth, Environmental and Planetary Sciences</h3>
@@ -54,12 +56,11 @@ Education
   </div>
   <img class="exp-logo" src="{{ '/images/logos/tribhuvan-logo.png' | relative_url }}" alt="Tribhuvan University logo">
 </div>
-<div class="edu-detail"><small>Thesis: <a href="https://doi.org/10.13140/RG.2.2.20859.69926/1">Automated Road Extraction from Sentinel-2 Imagery using CNN</a><br>Relevant Coursework: GIS, Remote Sensing, Photogrammetry, Digital Image Processing, Radar & LiDAR, GPS, Survey Techniques, Python for Geospatial Applications</small></div>
+<div class="edu-detail"><small>Thesis: <a href="https://doi.org/10.13140/RG.2.2.20859.69926/1">Automated Road Extraction from Sentinel-2 Imagery using a Convolutional Neural Network</a> (with Y. Regmi, A. Chhetri, D. Lamsal, and Z. Kandel)<br>Relevant Coursework: GIS, Remote Sensing, Photogrammetry, Digital Image Processing, Radar & LiDAR, GPS, Survey Techniques, Python for Geospatial Applications</small></div>
 
 <hr>
 
-Research Experience
-======
+## Research Experience
 <div class="exp-header">
   <div class="exp-header-text">
     <h3 class="tight-block">Doctoral Researcher</h3>
@@ -117,8 +118,7 @@ Research Experience
 
 <hr>
 
-Internships
-======
+## Internships
 <div class="exp-header">
   <div class="exp-header-text">
     <h3 class="tight-block">Geospatial Intern</h3>
@@ -157,8 +157,7 @@ Internships
 
 <hr>
 
-Publications
-======
+## Publications
 {% for pub in site.data.publications %}
 <div class="cv-pub{% if pub.venue contains 'Thesis' %} no-print{% endif %}">
   {% include publication-citation.html pub=pub %}
@@ -167,17 +166,15 @@ Publications
 
 <hr>
 
-Presentations
-======
+## Presentations
 {% include presentations-list.html %}
 
 <hr>
 
-Teaching Experience
-======
+## Teaching Experience
 <div class="exp-header">
   <div class="exp-header-text">
-    <h3 class="tight-block">Teaching Assistant - Remote Sensing for Disaster Response</h3>
+    <h3 class="tight-block">Teaching Assistant – Remote Sensing for Disaster Response</h3>
     <div class="tight-meta">Beaver Works Summer Institute (BWSI), MIT Lincoln Laboratory</div>
   </div>
   <div class="exp-meta-right">
@@ -195,8 +192,7 @@ Teaching Experience
 
 <hr>
 
-Data and Software
-======
+## Data and Software
 <ul class="tight-list">
 <li><a href="https://zenodo.org/records/20215489">Wheat spike and spikelet benchmark dataset</a> (portion of the study dataset, with oriented bounding box annotations), Zenodo, 2026. DOI: 10.5281/zenodo.20215489</li>
 <li><a href="https://wheatai.net/">WheatAI</a>, a web-based wheat phenotyping platform (co-developer), 2026.</li>
@@ -204,10 +200,9 @@ Data and Software
 
 <hr>
 
-Honors and Awards
-======
+## Honors and Awards
 <ul class="tight-list">
-<li>Ken Kennedy Institute Computational Science and Engineering Recruiting Fellowship, Rice University, Aug 2026</li>
+<li>Ken Kennedy Institute Computational Science and Engineering Recruiting Fellowship ($15,000), Rice University, Aug 2026</li>
 <li>3rd Place, UAV Track, NDSU AgTech Hackathon, 2026</li>
 <li>Dr. Fritz Gritzner Outstanding Graduate Geography Student Award, South Dakota State University, Jan 2026</li>
 <li><a href="https://projects.sare.org/sare_project/gnc25-412/">USDA North Central SARE Graduate Student Grant</a> ($19,999) for Wheat-TDM, Oct 2025</li>
@@ -215,8 +210,7 @@ Honors and Awards
 
 <hr>
 
-Service
-======
+## Service
 <ul class="tight-list">
 <li>GIS Volunteer, URISA's GISCorps, Jun 2020 – Present. Contributed geospatial data digitization and mapping to NASA's COVID-19 research initiative.</li>
 <li>Session Manager, IEEE International Geoscience and Remote Sensing Symposium (IGARSS), Sep 2020.</li>
@@ -224,8 +218,7 @@ Service
 
 <hr>
 
-Technical Skills
-======
+## Technical Skills
 <ul class="tight-list">
 <li><b>Programming:</b> Python, SQL, Bash, Git</li>
 <li><b>Machine Learning:</b> PyTorch, scikit-learn, deep learning, computer vision</li>

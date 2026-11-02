@@ -4,12 +4,17 @@
   <meta charset="utf-8">
   {% include seo.html %}
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/png" href="{{ '/images/favicon-32x32.png' | relative_url }}" sizes="32x32">
+  <meta property="og:type" content="website">
+  {% unless page.excerpt %}<meta property="og:description" content="{{ site.description | escape_once }}">{% endunless %}
+  <meta property="og:image" content="{{ site.og_image | prepend: '/images/' | absolute_url }}">
+  <meta name="twitter:card" content="summary">
+  <link rel="icon" type="image/png" href="{{ '/images/favicon.png' | relative_url }}">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{{ '/assets/css/minimal.css' | relative_url }}?v={{ site.time | date: '%s' }}">
 </head>
 <body id="top">
+  <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-nav">
     <nav aria-label="Main">
       <a href="{{ '/' | relative_url }}"{% if page.url == "/" %} class="current" aria-current="page"{% endif %}>home</a>
@@ -22,9 +27,9 @@
       {% endfor %}
     </nav>
   </header>
-  <main class="wrap">
+  <main class="wrap" id="main">
     {% if page.url != "/" %}
-    {% if page.title %}<h1 class="page-title">{{ page.title }}</h1>{% endif %}
+    {% if page.title and page.show_title != false %}<h1 class="page-title">{{ page.title }}</h1>{% endif %}
     {% endif %}
     <div class="content">
       {{ content }}
@@ -42,6 +47,10 @@
       window.addEventListener('scroll', update, { passive: true });
       update();
     })();
+    document.querySelectorAll('a[href^="http"]').forEach(function (link) {
+      link.target = '_blank';
+      link.rel = 'noopener';
+    });
   </script>
 </body>
 </html>

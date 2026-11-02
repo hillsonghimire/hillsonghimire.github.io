@@ -16,8 +16,8 @@
     "venue": "<i>Scientific Reports</i>, 16, 27355, 2026",
     "image": "wheat-spikelet-workflow.jpg",
     "alt": "Workflow from a field image to spike detection, cropped spikes, and spikelet annotation",
-    "credit": "",
-    "summary": "We evaluate YOLOv11 and YOLOv12 for wheat spike and spikelet detection and counting with oriented bounding boxes, and introduce a benchmark dataset of 48,521 spike and 60,404 spikelet instances. YOLOv11 reached 95.8% mAP@0.5 for spike detection, with a counting correlation of r = 0.993, and 99.0% mAP@0.5 for spikelet detection, establishing oriented detection as a robust and scalable approach to wheat phenotyping."
+    "credit": "<a href=\"https://doi.org/10.1038/s41598-026-55761-w\">Ghimire et al. 2026</a>, Fig. 3, <a href=\"https://creativecommons.org/licenses/by-nc-nd/4.0/\">CC BY-NC-ND 4.0</a>",
+    "summary": "We evaluate YOLOv11 and YOLOv12 for wheat spike and spikelet detection and counting with oriented bounding boxes, and introduce a benchmark dataset of 48,521 spike and 60,404 spikelet instances. YOLOv11 reached 95.8% mAP@0.5 for spike detection, with a counting correlation of r = 0.993, and 99.0% mAP@0.5 for spikelet detection."
   },
   {
     "title": "WheatAI v1.0: An AI-powered high-throughput wheat phenotyping platform",
@@ -32,7 +32,7 @@
       }
     ],
     "authors": "M. Maimaitijiang, <b>H. Ghimire</b>, S. Thapa, M. M. Billah, S. Sehgal, M. Singh, S. Kaushal, K. Poudel, S. Subedi, U. U. R. Janjua, L.-O. Makonga, J. Halder, H. S. Gill, M. Sher, J. S. Sidhu, and S. K. Sehgal",
-    "venue": "<i>arXiv preprint arXiv:2601.08863</i>, 2026",
+    "venue": "<i>arXiv:2601.08863</i>, 2026",
     "image": "wheatai.jpg",
     "alt": "WheatAI spike detection results on a sample field image",
     "credit": "",
@@ -42,7 +42,7 @@
     "title": "Spectral–structural fusion for wheat lodging severity assessment using UAS imagery and deep learning",
     "links": [
       {
-        "label": "paper",
+        "label": "preprint",
         "url": "https://doi.org/10.31220/agrirxiv.2026.00503"
       }
     ],
@@ -50,7 +50,7 @@
     "venue": "<i>agriRxiv preprint</i>, 2026",
     "image": "lodged-grain-field-halicki.jpg",
     "alt": "Aerial view of a lodged grain field",
-    "credit": "Photo: <a href=\"https://commons.wikimedia.org/wiki/File:2024_Wyleganie_zbo%C5%BCa.jpg\">Jacek Halicki</a>, <a href=\"https://creativecommons.org/licenses/by-sa/4.0/\">CC BY-SA 4.0</a>, resized",
+    "credit": "Illustrative photo: <a href=\"https://commons.wikimedia.org/wiki/File:2024_Wyleganie_zbo%C5%BCa.jpg\">Jacek Halicki</a>, <a href=\"https://creativecommons.org/licenses/by-sa/4.0/\">CC BY-SA 4.0</a>, resized",
     "summary": "We combine UAS multispectral reflectance with photogrammetric canopy height in a six-channel dataset and train a 2D convolutional neural network to classify wheat lodging into four severity levels. The model reached 68.6% test accuracy, demonstrating the combined spectral–structural representation while highlighting the need for larger, more balanced datasets."
   },
   {
@@ -65,7 +65,7 @@
     "venue": "<i>MS Thesis, South Dakota State University</i>, 2026",
     "image": "wheat-spike-thesis.jpg",
     "alt": "Wheat spike detection results",
-    "credit": "",
+    "credit": "<a href=\"https://doi.org/10.1038/s41598-026-55761-w\">Ghimire et al. 2026</a>, Fig. 5, <a href=\"https://creativecommons.org/licenses/by-nc-nd/4.0/\">CC BY-NC-ND 4.0</a>",
     "summary": "This thesis develops oriented object detection for wheat spikes and spikelets from close-range and UAV imagery. Across four YOLO-OBB architectures and seven UAV image modalities, image modality mattered more than model architecture. The trained models were integrated into the WheatAI platform."
   }
 ]
