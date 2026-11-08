@@ -9,10 +9,10 @@ redirect_from:
 <section class="intro">
   <div class="intro-text">
     <h1>Hillson Ghimire</h1>
-    <p>I am a PhD student at <a href="https://www.rice.edu/">Rice University</a>, advised by <a href="https://waterai.earth/">Noemi Vergopolan</a>. My research focuses on remote sensing, hydrology, and machine learning, particularly for understanding soil moisture and agricultural drought. I am exploring how satellite observations, land surface models, and machine learning can be combined to improve high-resolution soil moisture modeling and prediction.</p>
-    <p>Before Rice, I completed my MS at South Dakota State University with Maitiniyazi Maimaitijiang, working on computer vision and machine learning for agriculture. I developed deep learning models for wheat phenotyping and co-developed <a href="https://wheatai.net/">WheatAI</a>, a web-based crop phenotyping platform.</p>
-    <p>Previously, I was a Research Associate at the Geoinformatics Center, Asian Institute of Technology, where I worked on satellite-based disaster monitoring and automated flood mapping for the Sentinel Asia initiative.</p>
-    <p>My email is hg77 (at) rice (dot) edu. Feel free to reach out to talk about research!</p>
+    <p>I’m Hillson Ghimire, a geospatial data scientist specializing in remote sensing and machine learning. My work spans soil moisture and drought modeling, satellite-based disaster monitoring, and computer vision for agriculture.</p>
+    <p>I’m currently a PhD student at <a href="https://www.rice.edu/">Rice University</a>, advised by <a href="https://waterai.earth/">Noemi Vergopolan</a>. My research explores how satellite observations, land surface models, and machine learning can be combined to estimate and predict soil moisture at high spatial resolution and better understand how agricultural drought develops.</p>
+    <p>Before Rice, I completed my MS at South Dakota State University, where I worked with <a href="https://www.sdstate.edu/directory/maitiniyazi-maimaitijiang">Maitiniyazi Maimaitijiang</a>. I developed deep learning models for wheat phenotyping and co-developed <a href="https://wheatai.net/">WheatAI</a>, a web platform that helps plant breeders measure crop traits from imagery.</p>
+    <p>I was a research associate at the Geoinformatics Center at the Asian Institute of Technology, where I used satellite imagery to monitor natural hazards and their impacts for the Sentinel Asia initiative.</p>
     <p class="intro-links"><a href="mailto:hg77@rice.edu">Email</a> &nbsp;/&nbsp; <a href="{{ '/cv/' | relative_url }}">CV</a> &nbsp;/&nbsp; <a href="https://scholar.google.com/citations?user=gm6EoPoAAAAJ&amp;hl=en&amp;oi=ao">Google Scholar</a> &nbsp;/&nbsp; <a href="https://github.com/hillsonghimire">GitHub</a> &nbsp;/&nbsp; <a href="https://www.linkedin.com/in/hillsonghimire">LinkedIn</a></p>
   </div>
   <div class="intro-photo"><img src="{{ '/images/hillson-ghimire.jpg' | relative_url }}" alt="Hillson Ghimire"></div>
